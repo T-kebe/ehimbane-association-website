@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHIMBANE - Association</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/association.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script type="module" src="js/navbar.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+
+    </header>
+
+    <section class="vision-section">
+        <div class="vision-container">
+
+            <div class="vision-content">
+                <span class="vision-subtitle">Notre Vision</span>
+                <h2 class="vision-title">Histoire, défis et perspectives</h2>
+
+                <p class="vision-text">
+                    Fondée sur des valeurs de solidarité et d'engagement partagé, <strong>EHIMBANE - Initiatives &
+                        Développement (EID)</strong> est née de
+                    la volonté de répondre aux défis structurels et quotidiens des populations locales. Face aux
+                    mutations économiques, climatiques et sociales, notre action se concentre sur le développement
+                    durable, l'éducation et l'autonomisation des communautés.
+                </p>
+
+                <p class="vision-text">
+                    Chaque projet mené est une réponse concrète aux réalités du terrain. Malgré les obstacles, la
+                    résilience et la force d'initiative de ces populations guident nos priorités pour bâtir, ensemble,
+                    des solutions durables et porteuses d'avenir.
+                </p>
+
+                <!-- From Uiverse.io by rahulgarg99 -->
+                <a href="#galerie" class="button1" style="--clr: #7808d0">
+                    <span class="button1__icon-wrapper">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="button1__icon-svg" width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 14 15" fill="none" width="10" xmlns="http://www.w3.org/2000/svg"
+                            class="button1__icon-svg button1__icon-svg--copy">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Découvrir notre galerie
+                </a>
+
+            </div>
+
+            <div class="vision-image-wrapper">
+                <img src="assets/img/interieurVillage.jpg" alt="Vie et résilience des populations locales"
+                    class="vision-img">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- GRILLE ZONE GÉOGRAPHIQUE HARMOMISÉE (PAGE L'ASSOCIATION) -->
+    <div class="ehimbane-assoc-grid">
+
+        <!-- Colonne 1 : la Carte -->
+        <div class="ehimbane-assoc-card">
+            <div class="ehimbane-assoc-map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.657820418632!2d-16.547094599999998!3d12.854324599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xedd57c4d13ee251%3A0x7285c1a85bebfd37!2sTiobon!5e0!3m2!1sfr!2ssn!4v1791059368453!5m2!1sfr!2ssn"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="ehimbane-assoc-info">
+                <h3 class="ehimbane-assoc-card-title">Zone d'Intervention prioritaires</h3>
+                <p class="ehimbane-assoc-card-desc">Une cartographie ciblée permettant de suivre le déploiement
+                    opérationnel et l'impact de nos actions structurelles.</p>
+            </div>
+        </div>
+
+        <!-- Colonne 2 : la Galerie du Terroir -->
+        <div class="ehimbane-assoc-card">
+            <div class="ehimbane-assoc-gallery-wrapper" id="galerie">
+
+            </div>
+            <div class="ehimbane-assoc-info">
+                <h3 class="ehimbane-assoc-card-title">La réalité brute de notre terroir</h3>
+                <p class="ehimbane-assoc-card-desc">Regards immersifs mettant en lumière la beauté naturelle, les défis
+                    quotidiens et la résilience des populations locales.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fenêtre Lightbox Pop-up -->
+    <div id="ehimbane-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoom Terroir">
+    </div>
+
+    <section class="ehimbane-cta-section">
+        <div class="ehimbane-cta-content">
+            <h2>Envie de soutenir nos actions sur le terrain ?</h2>
+            <p>Chaque geste compte pour accompagner le développement structurel et l'éducation des communautés locales.
+            </p>
+            <div class="ehimbane-cta-buttons">
+                <!-- From Uiverse.io by 0x-Sarthak -->
+                <a href="contact.html" style="text-decoration: none; display: inline-block;">
+                    <button class="cta">
+                        <span>Nous Contacter &nbsp;</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </a>
+                <a href="soutenir.html" style="text-decoration: none; display: inline-block;">
+                    <button class="cta btn-soutenir">
+                        <span>Nous Soutenir &nbsp;</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/association.js"></script>
+</body>
+
+</html>

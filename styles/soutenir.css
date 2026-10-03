@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #2cc718;
+    --primary-hover: #00d3cf;
+    --text-light: #ffffff;
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--text-light);
+}
+
+main {
+    background-color: #efeeee;
+    padding-top: 120px;
+    padding-bottom: 15px;
+}
+
+
+/* --- Section Intro --- */
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-section h1 {
+    font-size: 30px;
+    font-family: var(--font-title);
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #050505;
+}
+
+.description {
+    font-size: 17px;
+    color: rgb(58, 56, 56);
+}
+
+ /* Réseaux */
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-socials a {
+    width: 35px;
+    height: 35px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
+    transform: scale(1.5);
+    border: 2px solid var(--text-light);
+}
+.footer-social-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/* --- Grille des cartes de soutien --- */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.support-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-bottom: 5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.support-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.support-card p {
+    color: rgb(58, 56, 56);
+    font-family: var(--font-body);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* From Uiverse.io by rahulgarg99 */
+/* --- Boutons --- */
+
+.button1 {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+}
+
+.button1__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button1:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.button1:hover .button1__icon-wrapper {
+    color: var(--primary-color);
+    background-color: var(--text-light);
+}
+
+.button1__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button1:hover .button1__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button1:hover .button1__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+}
+
+
+
+
+/* --- Footer --- */
+.support-footer {
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 40px;
+    background-color: #000;
+    border-radius: 10px;
+    height: 250px;
+    color: white;
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.support-footer a {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.thanks {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+/* --- Responsive (Mobile) --- */
+@media (max-width: 768px) {
+    .intro-section{
+        width: 80%;
+    }
+    .intro-section h1{
+        text-align:justify;
+    }
+    .description{
+        text-align: center;
+    }
+    .support-grid{
+        padding: 15px;
+    }
+    .support-card{
+        height: 250px;
+    }
+}

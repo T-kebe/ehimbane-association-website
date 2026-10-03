@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #2cc718;
+    --primary-hover: #00d3cf;
+    --text-light: #ffffff;
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #f5f5f5;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 87px;
+    height: 84vh;
+}
+
+.formulaire {
+    flex: 1.5;
+    background-color: rgb(190, 223, 140);
+    border-top-right-radius: 10px;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+.formulaire-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: #324530;
+}
+
+.formulaire-content h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #324530;
+    font-family: var(--font-title);
+}
+
+.formulaire input,
+.formulaire textarea,
+.btn-envoyer {
+    border-radius: 8px;
+    padding: 20px;
+    border: 2px solid rgb(126, 135, 112);
+}
+
+.formulaire textarea {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.texte {
+    flex: 0.75;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../assets/img/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 20px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: first baseline;
+    padding-top: 50px;
+}
+
+.texte::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35.5%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+    z-index: 2;
+}
+
+.texte p {
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8),
+        0px 0px 5px rgba(0, 0, 0, 0.6);
+        margin-bottom: 15px;
+}
+
+.texte h2 {
+    text-align: center;
+    font-weight: 900;
+    font-family: var(--font-title);
+    color: #ffffff !important;
+    margin-top: 90px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8),
+        0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.bg-wa-color {
+    background: #075e54;
+}
+
+.bg-mail-color {
+    background: #12d312;
+}
+
+.ehimbane-side-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    left: 10%;
+    z-index: 10;
+    justify-content: center;
+}
+
+.Btn-side {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Btn-side:hover {
+    width: 140px;
+}
+
+.svgContainer-side {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 8px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.btn-text-side {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding-left: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.Btn-side:hover .btn-text-side {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.1s;
+}
+
+.BG-side {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 8px;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Btn-side:hover .BG-side {
+    transform: rotate(15deg);
+    transform-origin: bottom left;
+}
+
+.Btn-side:hover .svgContainer-side {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn-envoyer {
+    font-weight: 700;
+    cursor: pointer;
+    margin: auto 0;
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    padding: 10px 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.btn-envoyer::after {
+    display: none;
+}
+
+.btn-envoyer:hover {
+    background-color: #141515;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+
+    .texte h2,
+    .texte P {
+        font-size: smaller;
+        text-align: center;
+    }
+
+    .texte::before {
+        width: 37.8%;
+    }
+}
